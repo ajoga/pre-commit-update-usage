@@ -1,0 +1,7 @@
+- id: update-usage
+  name: Update usage in a file
+  description: The main scenario for this hook is to update the "usage" section in a README.md file.
+  entry: pre-commit-update-usage
+  language: python
+  pass_filenames: False
+  always_run: true

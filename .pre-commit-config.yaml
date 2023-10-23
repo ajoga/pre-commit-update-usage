@@ -1,0 +1,13 @@
+repos:
+- repo: local
+  hooks:
+    - id: update-usage
+      entry: pre-commit-update-usage
+      language: python
+      name: Update usage in a file
+      pass_filenames: False
+      always_run: true
+      args:
+        [
+          --usage-command=source .venv/bin/activate && poetry run python pre_commit_update_usage/main.py --help,
+        ]
