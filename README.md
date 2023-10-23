@@ -15,7 +15,7 @@ Keep the "usage" section of your README up-to-date without thinking about it eve
     ```yaml
     repos:
       - repo: /home/ssm-user/pre-commit-update-hook
-        rev: main
+        rev: 0.1.0
         hooks:
           - id: update-usage
             args:
